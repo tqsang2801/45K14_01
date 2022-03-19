@@ -8,9 +8,14 @@ Create table TAIKHOAN
 )
 Create table DANGKY
 (
-	TenDangNhap nvarchar(100) primary key,
-	MatKhau nvarchar(100) not null default 0,
-	SDT varchar(20)
+	Ho nvarchar(50),
+	Ten nvarchar(50),
+	TenDangNhap varchar(50),
+	MatKhau varchar(50),
+	NhapLaiMatKhau varchar(50),
+	GioiTinh varchar(10),
+	SoDienThoai varchar(10),
+	Email varchar(50)
 )
 
 create table NGUOIDUNG 
@@ -40,8 +45,4 @@ Create table THONGTINTRO
 	ThoiGianDangTin date,
 	primary key (MaTin),
 	Foreign key(MaNguoiDung) references NGUOIDUNG(MaNguoiDung)
-)
-Create table THONGTINTROCHITIET
-(
-	
 )
