@@ -5,199 +5,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style type="text/css">
-
-        .auto-style3 {
-            font-size: x-large;
-            color: #009933;
-            background-color: #FFFFFF;
-        }
-        .auto-style1 {
-            width: 64%;
-        }
-        .auto-style14 {
-        width: 464px;
-        font-weight: bold;
-        text-align: left;
-        height: 37px;
-    }
-    .auto-style15 {
-        width: 789px;
-        height: 37px;
-    }
-        .auto-style8 {
-            width: 464px;
-            font-weight: bold;
-            text-align: left;
-        }
-        .auto-style7 {
-            width: 789px;
-        }
-        .auto-style11 {
-            width: 464px;
-            font-weight: bold;
-            height: 27px;
-            text-align: left;
-        }
-        .auto-style10 {
-            width: 789px;
-            height: 27px;
-        }
-        .auto-style12 {
-            width: 464px;
-            font-weight: bold;
-            text-align: left;
-            height: 30px;
-        }
-        .auto-style13 {
-            width: 789px;
-            height: 30px;
-        }
-        .auto-style5 {
-            width: 464px;
-            height: 26px;
-            font-weight: bold;
-            text-align: left;
-        }
-        .auto-style6 {
-            height: 26px;
-            width: 789px;
-        }
-        .auto-style9 {
-            width: 464px;
-            font-weight: bold;
-            height: 27px;
-            text-align: right;
-        }
-        .auto-style2 {
-            width: 464px;
-            text-align: right;
-        }
-        </style>
+    <link href="StyleRegist.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <p>
-            <strong><span class="auto-style3">&nbsp;Đăng ký tài khoản</span></strong></p>
-        <table align="center" class="auto-style1">
-            <tr>
-                <td class="auto-style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Họ:</td>
-                <td class="auto-style15">
-                    <asp:TextBox ID="txt_Ho" runat="server" Height="27px" placeholder="Nhập vào họ của bạn" ToolTip="Nhập vào họ của bạn" Width="285px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="rfv_Ho" runat="server" ControlToValidate="txt_Ho" Display="Dynamic" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="rev_Ho" runat="server" ControlToValidate="txt_Ho" Display="Dynamic" ErrorMessage="Họ không hợp lệ" ForeColor="#CC0000" ValidationExpression="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" ValidationGroup="DangKy"></asp:RegularExpressionValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên:</td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txt_Ten" runat="server" Height="27px" placeholder="Nhập vào tên của bạn" ToolTip="Nhập vào tên của bạn" Width="285px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="rfv_Ten" runat="server" ControlToValidate="txt_Ten" Display="Dynamic" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="rev_Ten" runat="server" ControlToValidate="txt_Ten" Display="Dynamic" ErrorMessage="Tên không hợp lệ" ForeColor="#CC0000" ValidationExpression="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" ValidationGroup="DangKy"></asp:RegularExpressionValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tên đăng nhập:</td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txt_TenDangNhap" runat="server" Height="27px" placeholder="Nhập vào tên đăng nhập" ToolTip="Nhập tên đăng nhập" Width="285px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="rfv_TenDangNhap" runat="server" ControlToValidate="txt_TenDangNhap" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mật khẩu:</td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txt_MatKhau" runat="server" Height="26px" placeholder="Nhập vào mật khẩu" TextMode="Password" ToolTip="Nhập mật khẩu" Width="283px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;</td>
-                <td class="auto-style7">
-                    <asp:RequiredFieldValidator ID="rfv_MatKhau" runat="server" ControlToValidate="txt_MatKhau" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nhập lại mật khẩu:</td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txt_NhapLaiMatKhau" runat="server" Height="27px" placeholder="Nhập lại mật khẩu" TextMode="Password" ToolTip="Nhập lại mật khẩu" Width="282px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style11"></td>
-                <td class="auto-style10">
-                    <asp:CompareValidator ID="cvl_NhapLaiMatKhau" runat="server" ControlToCompare="txt_MatKhau" ControlToValidate="txt_NhapLaiMatKhau" Display="Dynamic" ErrorMessage="Mật khẩu không khớp" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:CompareValidator>
-                    <asp:RequiredFieldValidator ID="rfv_NhapLaiMatKhau" runat="server" ControlToValidate="txt_NhapLaiMatKhau" Display="Dynamic" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giới tính:</td>
-                <td class="auto-style13">
-                    <asp:RadioButton ID="rbn_Nam" runat="server" GroupName="GioiTinh" Text="Nam" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="rbn_Nu" runat="server" GroupName="GioiTinh" Text="Nữ" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="rbn_Khac" runat="server" GroupName="GioiTinh" Text="Khác" />
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style12"></td>
-                <td class="auto-style13">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Số điện thoại:</td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txt_SDT" runat="server" Height="25px" placeholder="+84" ToolTip="Nhập số điện thoại" Width="284px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style11"></td>
-                <td class="auto-style10">
-                    <asp:RegularExpressionValidator ID="rev_SDT" runat="server" ControlToValidate="txt_SDT" Display="Dynamic" ErrorMessage="Số điện thoại không hợp lệ" ForeColor="#CC0000" ValidationExpression="^((0(\d){9}))$" ValidationGroup="DangKy"></asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="rfv_SDT" runat="server" ControlToValidate="txt_SDT" Display="Dynamic" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:</td>
-                <td class="auto-style6">
-                    <asp:TextBox ID="txt_Email" runat="server" Height="28px" placeholder="example@gmail.com" ToolTip="Nhập Email" Width="283px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style9"></td>
-                <td class="auto-style10">
-                    <asp:RegularExpressionValidator ID="rev_Email" runat="server" ControlToValidate="txt_Email" Display="Dynamic" ErrorMessage="Email không hợp lệ" ForeColor="#CC0000" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" ValidationGroup="DangKy"></asp:RegularExpressionValidator>
-                    <asp:RequiredFieldValidator ID="rfv_Email" runat="server" ControlToValidate="txt_Email" Display="Dynamic" ErrorMessage="Không được để trống" ForeColor="#CC0000" ValidationGroup="DangKy"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td class="auto-style7">
-                    <br />
-                    <asp:Button ID="btn_DangKy" runat="server" BackColor="#009933" Height="39px" Text="Đăng Ký" ValidationGroup="DangKy" Width="106px" />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="btn_Dong" runat="server" BackColor="Red" Height="39px" Text="Đóng" Width="77px" />
-                </td>
-            </tr>
-        </table>
-    
+    <div class ="registrationbox">
+        <img src="user5.png" alt="Alternate Text" class ="user" />
+        <h2>Registration</h2>
+        <form runat="server">
+            <asp:Label Text="Fullname" CssClass="lblfullname" runat="server" /> 
+            <asp:TextBox runat="server" CssClass="txtfullname" placeholder="Enter Fullname" ID="txt_Fullname" />
+            <asp:Label Text="Username" CssClass="lblusername" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtusername" placeholder="Enter Username" ID="txt_Username" />
+            <asp:Label Text="Phone" CssClass="lblphone" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtphone" placeholder="Enter Phone" ID="txt_Phone" />
+            <asp:Label Text="Email" CssClass="lblemail" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtemail" placeholder="Enter Email" ID="txt_Email" />
+            <asp:Label Text="Date of birth" CssClass="lblbirth" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtbirth" placeholder="dd/mm/yyyy" ID="txt_Birth" TextMode="Date" />
+            <asp:Label Text="Sex" CssClass="lblsex" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtsex" placeholder="Nam/Nữ" ID="txt_Sex" />
+            <asp:Label Text="Address" CssClass="lbladdress" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtaddress" placeholder="Enter Address" ID="txt_Address" />
+            <asp:Label Text="Password" CssClass="lblpassword" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtpassword" placeholder="*************" ID="txt_Password" TextMode="Password" />
+            <asp:Label Text="Confirm Password" CssClass="lblconfirmpass" runat="server" />
+            <asp:TextBox runat="server" CssClass="txtconfirmpass" placeholder="*************" ID="txt_ConfirmPass" TextMode="Password" />
+            <asp:Button Text="REGISTER" CssClass="btnregister" runat="server" ID="btn_Register"  ValidationGroup="Registration" />
+            <asp:RequiredFieldValidator ID="rfv_fullname" runat="server" ControlToValidate="txt_Fullname" Display="Dynamic" ErrorMessage="*Vui lòng nhập fullname" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_fullname"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_username" runat="server" ControlToValidate="txt_Username" Display="Dynamic" ErrorMessage="*Vui lòng nhập username" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_username"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_phone" runat="server" ControlToValidate="txt_Phone" Display="Dynamic" ErrorMessage="*Vui lòng nhập số điện thoại" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_phone"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_email" runat="server" ControlToValidate="txt_Email" Display="Dynamic" ErrorMessage="*Vui lòng nhập Email" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_email"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_birth" runat="server" ControlToValidate="txt_Birth" Display="Dynamic" ErrorMessage="*Vui lòng nhập ngày sinh" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_birth"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_sex" runat="server" ControlToValidate="txt_Sex" Display="Dynamic" ErrorMessage="*Vui lòng nhập giới tính" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_sex"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_address" runat="server" ControlToValidate="txt_Address" Display="Dynamic" ErrorMessage="*Vui lòng nhập địa chỉ của bạn" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_address"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_password" runat="server" ControlToValidate="txt_Password" Display="Dynamic" ErrorMessage="*Vui lòng nhập mật khẩu" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_password"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfv_confirmpass" runat="server" ControlToValidate="txt_ConfirmPass" Display="Dynamic" ErrorMessage="*Vui lòng nhập lại mật khẩu" ForeColor="#E57575" ValidationGroup="Registration" CssClass="rfv_confirmpass"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="rev_Fullname" runat="server" ControlToValidate="txt_Fullname" Display="Dynamic" ErrorMessage="Họ tên không hợp lệ" ForeColor="#E57575" ValidationExpression="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" ValidationGroup="Registration"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="rev_Phone" runat="server" ControlToValidate="txt_Phone" Display="Dynamic" ErrorMessage="Số điện thoại không hợp lệ" ForeColor="#E57575" ValidationExpression="^((0(\d){9}))$" ValidationGroup="Registration"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="rev_Email" runat="server" ControlToValidate="txt_Email" Display="Dynamic" ErrorMessage="Email không hợp lệ" ForeColor="#E57575" ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" ValidationGroup="Registration"></asp:RegularExpressionValidator>
+            <asp:CompareValidator ID="cvl_ConfirmPass" runat="server" ControlToCompare="txt_Password" ControlToValidate="txt_ConfirmPass" Display="Dynamic" ErrorMessage="Mật khẩu không khớp" ForeColor="#E57575" ValidationGroup="Registration"></asp:CompareValidator>
+        </form>
     </div>
-    </form>
 </body>
 </html>
