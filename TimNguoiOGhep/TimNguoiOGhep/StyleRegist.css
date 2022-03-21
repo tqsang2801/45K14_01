@@ -1,0 +1,137 @@
+﻿body {
+    margin:0;
+    padding:0;
+    background-image:url('background1.jpg');
+    background-size:cover;
+    font-family:sans-serif;
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:350px;
+    height:420px;
+    padding:80px 40px;
+    box-sizing:border-box;
+    background: rgba(0,0,0,0.5);
+}
+.user{
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    top: calc(20px/2);
+    left: calc(50% - 50px);
+    position: absolute;
+}
+<!--xem lại -->
+h2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color: rgb(255,217,9);
+}
+.lblfullname, .lblusername, .lblphone, .lblemail, .lblbirth, .lblsex, .lbladdress, .lblpassword, .lblconfirmpass{
+    font-weight:bold;
+    color: #fff;
+}
+.txtfullname, .txtusername, .txtphone, .txtemail, .txtbirth, .txtsex, .txtaddress, .txtpassword, .txtconfirmpass, .btnsubmit{
+    width:100%;
+    margin-bottom:20px;
+}
+.txtfullname, .txtusername, .txtphone, .txtemail, .txtbirth, .txtsex, .txtaddress, .txtpassword, .txtconfirmpass{
+    border:none;
+    border-bottom:3px solid #fff;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+    background-color: transparent;
+}
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+.btnregister{
+    border:none;
+    outline:none;
+    height:40px;
+    font-size:16px;
+    color:#fff;
+    background-color:rgb(255,9,9);
+    cursor:pointer;
+    border-radius:20px;
+    transition:.3s ease-in-out;
+}
+.btnregister:hover{
+    background-color:rgb(255,217,9);
+}
+.rfv_fullname{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    top: 170px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_username{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    bottom: 150px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_phone{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    top: 170px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_email{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    bottom: 150px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_birth{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    top: 170px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_sex{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    bottom: 150px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_address{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    bottom: 150px;
+    left: 40px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
