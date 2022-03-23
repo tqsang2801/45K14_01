@@ -4,3 +4,9 @@ E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.pdb
 E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.dll
 E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.pdb
 E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.csprojResolveAssemblyReference.cache
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.dll.config
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.dll
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.pdb
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.csprojResolveAssemblyReference.cache
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.dll
+D:\Quản trị dự án\45K14_01\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.pdb
