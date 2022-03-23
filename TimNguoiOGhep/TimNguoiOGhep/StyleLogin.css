@@ -84,27 +84,25 @@ h2{
     font-size:16px;
     overflow: hidden;
     bottom: 35px;
-    left: 58px;
+    left: 120px;
     position: absolute;
     font-weight:bold;
     color: #E57575;
 }
 .rfv_user{
-    font-size:12px;
-    font-style: italic;
+    font-size:16px;
     overflow: hidden;
-    top: 170px;
-    left: 40px;
+    top: 110px;
+    left: 120px;
     position: absolute;
     font-weight:bold;
     color: #E57575;
 }
 .rfv_pass{
-    font-size:12px;
-    font-style: italic;
+    font-size:16px;
     overflow: hidden;
-    bottom: 150px;
-    left: 40px;
+    bottom: 210px;
+    left: 120px;
     position: absolute;
     font-weight:bold;
     color: #E57575;

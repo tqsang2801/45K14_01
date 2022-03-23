@@ -58,11 +58,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="background2.png" />
+    <Content Include="background10.jpg" />
     <Content Include="DangKy.aspx" />
-    <Content Include="help.png" />
-    <Content Include="StyleHome.css" />
-    <Content Include="StyleHome2.css" />
+    <Content Include="StyleLogin.css" />
     <Content Include="StyleRegist.css" />
     <Content Include="TimNguoiOGhep.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -80,10 +78,11 @@
     <Content Include="background1.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
-    <Content Include="Style.css" />
     <Content Include="trangchu.aspx" />
     <Content Include="user5.png" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangKy.aspx.cs">
@@ -124,9 +123,6 @@
     <None Include="TimNguoiOGhep.dbml.layout">
       <DependentUpon>TimNguoiOGhep.dbml</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

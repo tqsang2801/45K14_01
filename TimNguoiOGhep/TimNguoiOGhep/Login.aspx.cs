@@ -12,7 +12,7 @@ namespace TimNguoiOGhep
         TimNguoiOGhepDataContext dt = new TimNguoiOGhepDataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btn_DangNhap_Click(object sender, EventArgs e)

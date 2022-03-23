@@ -13,15 +13,6 @@ namespace TimNguoiOGhep {
     public partial class DangKy {
         
         /// <summary>
-        /// txt_Fullname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Fullname;
-        
-        /// <summary>
         /// txt_Username control.
         /// </summary>
         /// <remarks>
@@ -29,51 +20,6 @@ namespace TimNguoiOGhep {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_Username;
-        
-        /// <summary>
-        /// txt_Phone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Phone;
-        
-        /// <summary>
-        /// txt_Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Email;
-        
-        /// <summary>
-        /// txt_Birth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Birth;
-        
-        /// <summary>
-        /// txt_Sex control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Sex;
-        
-        /// <summary>
-        /// txt_Address control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Address;
         
         /// <summary>
         /// txt_Password control.
@@ -94,13 +40,40 @@ namespace TimNguoiOGhep {
         protected global::System.Web.UI.WebControls.TextBox txt_ConfirmPass;
         
         /// <summary>
-        /// btn_Register control.
+        /// txt_Fullname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Register;
+        protected global::System.Web.UI.WebControls.TextBox txt_Fullname;
+        
+        /// <summary>
+        /// txt_Phone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Phone;
+        
+        /// <summary>
+        /// txt_Address control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Address;
+        
+        /// <summary>
+        /// btn_SignUp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_SignUp;
         
         /// <summary>
         /// rfv_fullname control.
@@ -128,33 +101,6 @@ namespace TimNguoiOGhep {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_phone;
-        
-        /// <summary>
-        /// rfv_email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_email;
-        
-        /// <summary>
-        /// rfv_birth control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_birth;
-        
-        /// <summary>
-        /// rfv_sex control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_sex;
         
         /// <summary>
         /// rfv_address control.
@@ -200,15 +146,6 @@ namespace TimNguoiOGhep {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_Phone;
-        
-        /// <summary>
-        /// rev_Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_Email;
         
         /// <summary>
         /// cvl_ConfirmPass control.

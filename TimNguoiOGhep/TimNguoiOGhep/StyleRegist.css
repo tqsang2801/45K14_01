@@ -1,45 +1,90 @@
 ﻿body {
     margin:0;
     padding:0;
-    background-image:url('background1.jpg');
+    background-image:url('background10.jpg');
     background-size:cover;
     font-family:sans-serif;
 }
-.loginbox{
+.signupbox{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:350px;
-    height:420px;
+    width:600px;
+    height:450px;
     padding:80px 40px;
     box-sizing:border-box;
     background: rgba(0,0,0,0.5);
 }
-.user{
-    width:100px;
-    height:100px;
+.lblsignup {
+    font-size:25px;
     overflow: hidden;
-    top: calc(20px/2);
-    left: calc(50% - 50px);
+    top: 30px;
+    left: 240px;
     position: absolute;
-}
-<!--xem lại -->
-h2{
-    padding:0;
-    margin:0;
-    text-align:center;
+    font-weight:bold;
     color: rgb(255,217,9);
 }
-.lblfullname, .lblusername, .lblphone, .lblemail, .lblbirth, .lblsex, .lbladdress, .lblpassword, .lblconfirmpass{
+.lblusername, .lblpassword, .lblconfirmpass, .lblfullname, .lblphone, .lbladdress{
+    font-size:16px;
+    overflow: hidden;
+    position: absolute;
     font-weight:bold;
     color: #fff;
 }
-.txtfullname, .txtusername, .txtphone, .txtemail, .txtbirth, .txtsex, .txtaddress, .txtpassword, .txtconfirmpass, .btnsubmit{
-    width:100%;
-    margin-bottom:20px;
+.lblusername{
+    top: 90px;
+    left: 40px;
 }
-.txtfullname, .txtusername, .txtphone, .txtemail, .txtbirth, .txtsex, .txtaddress, .txtpassword, .txtconfirmpass{
+.lblpassword{
+    top: 175px;
+    left: 40px;
+}
+.lblconfirmpass{
+    top: 260px;
+    left: 40px;
+}
+.lblfullname{
+    top: 90px;
+    left: 345px;
+}
+.lblphone{
+    top: 175px;
+    left: 345px;
+}
+.lbladdress{
+    top: 260px;
+    left: 345px;
+}
+.txtusername{
+    top: 110px;
+    left: 40px;
+
+}
+.txtpassword{
+    top: 195px;
+    left: 40px;
+}
+.txtconfirmpass{
+    top: 280px;
+    left: 40px;
+}
+.txtfullname{
+    top: 110px;
+    left: 345px;
+}
+.txtphone{
+    top: 195px;
+    left: 345px;
+}
+.txtaddress{
+    top: 280px;
+    left: 345px;
+}
+
+.txtusername, .txtpassword, .txtconfirmpass,.txtfullname, .txtphone, .txtaddress{
+    overflow: hidden;
+    position: absolute;
     border:none;
     border-bottom:3px solid #fff;
     outline:none;
@@ -51,7 +96,7 @@ h2{
 ::placeholder{
     color: rgba(255,255,255,.5);
 }
-.btnregister{
+.btnsignup{
     border:none;
     outline:none;
     height:40px;
@@ -61,77 +106,65 @@ h2{
     cursor:pointer;
     border-radius:20px;
     transition:.3s ease-in-out;
+    overflow: hidden;
+    top: 350px;
+    left: 80px;
+    position: absolute;
+    width:70%;
 }
-.btnregister:hover{
+.btnsignup:hover{
     background-color:rgb(255,217,9);
 }
-.rfv_fullname{
-    font-size:12px;
-    font-style: italic;
+.rfv_username, .rfv_password, .rfv_confirmpass, .rfv_fullname, .rfv_phone, .rfv_address{
+    font-size:16px;
     overflow: hidden;
-    top: 170px;
-    left: 40px;
     position: absolute;
     font-weight:bold;
     color: #E57575;
 }
+
 .rfv_username{
-    font-size:12px;
-    font-style: italic;
-    overflow: hidden;
-    bottom: 150px;
-    left: 40px;
-    position: absolute;
-    font-weight:bold;
-    color: #E57575;
+    top: 90px;
+    left: 120px;
+}
+.rfv_password{
+    top: 175px;
+    left: 120px;
+}
+.rfv_confirmpass{
+    top: 260px;
+    left: 185px;
+}
+.rfv_fullname{
+    top: 90px;
+    left: 418px;
 }
 .rfv_phone{
-    font-size:12px;
-    font-style: italic;
-    overflow: hidden;
-    top: 170px;
-    left: 40px;
-    position: absolute;
-    font-weight:bold;
-    color: #E57575;
-}
-.rfv_email{
-    font-size:12px;
-    font-style: italic;
-    overflow: hidden;
-    bottom: 150px;
-    left: 40px;
-    position: absolute;
-    font-weight:bold;
-    color: #E57575;
-}
-.rfv_birth{
-    font-size:12px;
-    font-style: italic;
-    overflow: hidden;
-    top: 170px;
-    left: 40px;
-    position: absolute;
-    font-weight:bold;
-    color: #E57575;
-}
-.rfv_sex{
-    font-size:12px;
-    font-style: italic;
-    overflow: hidden;
-    bottom: 150px;
-    left: 40px;
-    position: absolute;
-    font-weight:bold;
-    color: #E57575;
+    top: 175px;
+    left: 398px;
 }
 .rfv_address{
+    top: 260px;
+    left: 413px;
+}
+
+.rev_fullname, .rev_phone, .cvl_confirmpass{
     font-size:12px;
     font-style: italic;
     overflow: hidden;
-    bottom: 150px;
-    left: 40px;
     position: absolute;
     font-weight:bold;
     color: #E57575;
 }
+.rev_fullname{
+    top: 155px;
+    left: 345px;
+}
+.rev_phone{
+    top: 240px;
+    left: 345px;
+}
+.cvl_confirmpass{
+    top: 325px;
+    left: 40px;
+ }
