@@ -1,6 +1,0 @@
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.dll.config
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.dll
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\bin\TimNguoiOGhep.pdb
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.dll
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.pdb
-E:\Quản trị dự án\TimNguoiOGhep\TimNguoiOGhep\obj\Debug\TimNguoiOGhep.csprojResolveAssemblyReference.cache
