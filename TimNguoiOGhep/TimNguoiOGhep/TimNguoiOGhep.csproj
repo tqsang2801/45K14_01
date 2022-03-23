@@ -60,6 +60,10 @@
   <ItemGroup>
     <Content Include="background2.png" />
     <Content Include="DangKy.aspx" />
+    <Content Include="help.png" />
+    <Content Include="StyleHome.css" />
+    <Content Include="StyleHome2.css" />
+    <Content Include="StyleRegist.css" />
     <Content Include="TimNguoiOGhep.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>TimNguoiOGhep.designer.cs</LastGenOutput>
@@ -120,6 +124,9 @@
     <None Include="TimNguoiOGhep.dbml.layout">
       <DependentUpon>TimNguoiOGhep.dbml</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
