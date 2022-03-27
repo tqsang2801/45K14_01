@@ -1,0 +1,158 @@
+﻿body {
+    margin:0;
+    padding:0;
+    background-image:url('background1.jpg');
+    background-size:cover;
+    font-family:sans-serif;
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:800px;
+    height:850px;
+    padding:40px 40px;
+    box-sizing:border-box;
+    background: rgba(0,0,0,0.5);
+}
+.user{
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    position: absolute;
+}
+h2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color: rgb(255,217,9);
+
+}
+.lbluser, .lblhoten, .lblgioitinh, .lblsdt, .lblemail, .lblngaysinh, .lbldiachi, .lblfb{
+    font-weight:bold;
+    color: #fff;
+}
+
+.txtuser, .txthoten, .txtgioitinh, .txtsdt, .txtemail, .txtngaysinh, .txtdiachi, .txtfb, .btnsubmit{
+    width:100%;
+    margin-bottom:20px;
+}
+.txtuser, .txthoten, .txtgioitinh, .txtsdt, .txtemail, .txtngaysinh, .txtdiachi, .txtfb{
+    border:none;
+    border-bottom:3px solid #fff;
+    outline:none;
+    height:40px;
+    color:#fff;
+    font-size:16px;
+    background-color: transparent;
+}
+
+::placeholder{
+    color: rgba(255,255,255,.5);
+}
+.btnsubmit{
+    border:none;
+    outline:none;
+    height:40px;
+    font-size:16px;
+    color:#fff;
+    background-color:rgb(255,9,9);
+    cursor:pointer;
+    border-radius:20px;
+    transition:.3s ease-in-out;
+}
+
+.btnsubmit:hover{
+    background-color:rgb(255,217,9);
+}
+.btnsignup{
+    font-size:16px;
+    font-weight:700;
+    overflow: hidden;
+    bottom: 70px;
+    left: 210px;
+    position: absolute;
+    text-decoration:none;
+    text-decoration:underline;
+    color:rgb(255,217,9);
+}
+
+.lblThongBao{
+    font-size:16px;
+    overflow: hidden;
+    bottom: 35px;
+    left: 120px;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_user, .rfv_hoten, .rfv_gioitinh, .rfv_sdt, .rfv_email, .rfv_ngaysinh, .rfv_diachi, .rfv_linkfb{
+    font-size:16px;
+    overflow: hidden;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rfv_user{
+    top: 70px;
+    left: 120px;
+}
+.rfv_hoten{
+    top: 153px;
+    left: 94px;
+}
+.rfv_gioitinh{
+    top: 236px;
+    left: 111px;
+}
+.rfv_sdt{
+    top: 319px;
+    left: 146px;
+}
+.rfv_email{
+    top: 402px;
+    left: 88px;
+}
+.rfv_ngaysinh{
+    top: 485px;
+    left: 120px;
+}
+.rfv_diachi{
+    top: 568px;
+    left: 97px;
+}
+.rfv_linkfb{
+    top: 651px;
+    left: 152px;
+}
+.rev_hoten, .rev_sdt, .rev_email, .rev_ngaysinh, .rev_linkfb{
+    font-size:12px;
+    font-style: italic;
+    overflow: hidden;
+    position: absolute;
+    font-weight:bold;
+    color: #E57575;
+}
+.rev_hoten{
+    top: 221px;
+    left: 42px;
+}
+.rev_sdt{
+    top: 387px;
+    left: 42px;
+}
+.rev_email{
+    top: 470px;
+    left: 42px;
+}
+.rev_ngaysinh{
+    top:553px;
+    left: 42px;
+}
+.rev_linkfb{
+    top: 719px;
+    left: 42px;
+}
