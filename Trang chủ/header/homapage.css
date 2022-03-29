@@ -1,0 +1,99 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: "poppins", "san-serif";
+    box-sizing: border-box;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background: rgba(240, 236, 23, 0.644);
+  position: relative;  
+  font-weight: 600;
+  font-size: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+
+    background-size:1px 1px;
+
+    
+}
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+ content: '';
+ background: #ffba00;
+ width: 0;
+ height: 2px;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+.btn{
+    background: #ffba00;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn1{
+    background: #ffba00;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.search{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    max-width: 900px;
+    transform: (-50%,-50%);
+    text-align: center;
+}
+.search form{
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.search form input{
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.search form button{
+    background: #ffba00;
+    color: #fff;
+    padding: 10px 25px ;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
