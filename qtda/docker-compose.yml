@@ -1,0 +1,41 @@
+version: "2.0"
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: findrooms
+    volumes:
+      - docker_database:/var/lib/mysql
+
+  backend:
+    container_name: findrooms-be
+    depends_on:
+      - mysql
+    build: ./findrooms-be
+    ports:
+      - 3100:3100
+    volumes:
+      - docker_upload:/app/public
+    environment:
+      DATABASE_HOST: mysql
+      DATABASE_USER_NAME: root
+      DATABASE_PASSWORD: root
+
+  frontend:
+    container_name: findrooms-fe
+    depends_on:
+      - mysql
+      - backend
+    build: ./findrooms-fe
+    ports:
+      - 4173:4173
+
+volumes: # add this section
+  docker_database:
+  docker_upload:
